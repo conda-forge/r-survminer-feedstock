@@ -14,14 +14,16 @@ Summary: Contains the function 'ggsurvplot()' for drawing easily beautiful and '
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/r-survminer-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/r-survminer-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/r-survminer-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/r-survminer-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/r-survminer-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/r-survminer-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/r-survminer-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/r-survminer-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/r-survminer-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/r-survminer-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/r-survminer-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/r-survminer-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/r-survminer/badges/version.svg)](https://anaconda.org/conda-forge/r-survminer)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/r-survminer/badges/downloads.svg)](https://anaconda.org/conda-forge/r-survminer)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-r--survminer-green.svg)](https://anaconda.org/conda-forge/r-survminer) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/r-survminer.svg)](https://anaconda.org/conda-forge/r-survminer) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/r-survminer.svg)](https://anaconda.org/conda-forge/r-survminer) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/r-survminer.svg)](https://anaconda.org/conda-forge/r-survminer) |
 
 Installing r-survminer
 ======================
