@@ -1,5 +1,4 @@
-{% set version = "0.4.3" %}
-
+{% set version = '0.4.3' %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,12 +9,13 @@ package:
 source:
   fn: survminer_{{ version }}.tar.gz
   url:
-    - https://cran.r-project.org/src/contrib/survminer_{{ version }}.tar.gz
-    - https://cran.r-project.org/src/contrib/Archive/survminer/survminer_{{ version }}.tar.gz
+    - {{ cran_mirror }}/src/contrib/survminer_{{ version }}.tar.gz
+    - {{ cran_mirror }}/src/contrib/Archive/survminer/survminer_{{ version }}.tar.gz
   sha256: 6eb91a39e52f930ea12b15adcdf7c578297ed9d31f0935e5debd79818fde522f
 
 build:
-  number: 0
+  merge_build_host: True  # [win]
+  number: 1
   skip: true  # [win32]
   rpaths:
     - lib/R/lib/
@@ -23,6 +23,8 @@ build:
 
 requirements:
   build:
+    - {{posix}}zip               # [win]
+  host:
     - r-base
     - r-broom
     - r-cmprsk
@@ -38,7 +40,6 @@ requirements:
     - r-survival
     - r-tibble
     - r-tidyr
-
   run:
     - r-base
     - r-broom
@@ -58,7 +59,7 @@ requirements:
 
 test:
   commands:
-    - $R -e "library('survminer')"  # [not win]
+    - $R -e "library('survminer')"           # [not win]
     - "\"%R%\" -e \"library('survminer')\""  # [win]
 
 about:
@@ -74,8 +75,9 @@ about:
 
 extra:
   recipe-maintainers:
-    - cbrueffer
     - johanneskoester
     - bgruening
     - daler
     - jdblischak
+    - cbrueffer
+    - dbast
