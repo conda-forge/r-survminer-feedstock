@@ -14,9 +14,8 @@ Summary: Contains the function 'ggsurvplot()' for drawing easily beautiful and '
 Current build status
 ====================
 
-[![Linux](https://img.shields.io/circleci/project/github/conda-forge/r-survminer-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/r-survminer-feedstock)
-[![OSX](https://img.shields.io/travis/conda-forge/r-survminer-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/r-survminer-feedstock)
-[![Windows](https://img.shields.io/appveyor/ci/conda-forge/r-survminer-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/r-survminer-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/r-survminer-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/r-survminer-feedstock)
 
 Current release info
 ====================
