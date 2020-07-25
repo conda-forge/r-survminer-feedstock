@@ -1,4 +1,4 @@
-{% set version = "0.4.7" %}
+{% set version = "0.4.8" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/survminer_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/survminer/survminer_{{ version }}.tar.gz
-  sha256: 7b605c8d89c6fbde40727d8ecce5e47f552f2b5f5513c7917d284645f41bb2dd
+  sha256: cef1cca1c8a65c0121074e15a396be036ff7bad1a1fecdac5162f59a50d33eda
 
 build:
   merge_build_host: true  # [win]
@@ -33,6 +33,7 @@ requirements:
     - r-magrittr
     - r-maxstat
     - r-purrr
+    - r-rlang
     - r-scales
     - r-survmisc
     - r-survival
@@ -48,6 +49,7 @@ requirements:
     - r-magrittr
     - r-maxstat
     - r-purrr
+    - r-rlang
     - r-scales
     - r-survmisc
     - r-survival
@@ -61,10 +63,11 @@ test:
 
 about:
   home: http://www.sthda.com/english/rpkgs/survminer/
-  license: GPL-2
+  license: GPL-2.0-only
   summary: Contains the function 'ggsurvplot()' for drawing easily beautiful and 'ready-to-publish' survival curves with the 'number at risk' table and 'censoring count plot'. Other functions are also available to plot adjusted curves for `Cox` model and to visually examine 'Cox' model assumptions.
   license_family: GPL2
-  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
+  license_file:
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
 
 extra:
   recipe-maintainers:
