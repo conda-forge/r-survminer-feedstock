@@ -1,4 +1,4 @@
-{% set version = "0.4.7" %}
+{% set version = "0.4.8" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/survminer_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/survminer/survminer_{{ version }}.tar.gz
-  sha256: 7b605c8d89c6fbde40727d8ecce5e47f552f2b5f5513c7917d284645f41bb2dd
+  sha256: cef1cca1c8a65c0121074e15a396be036ff7bad1a1fecdac5162f59a50d33eda
 
 build:
   merge_build_host: true  # [win]
