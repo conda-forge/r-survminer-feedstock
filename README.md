@@ -3,7 +3,7 @@ About r-survminer
 
 Home: http://www.sthda.com/english/rpkgs/survminer/
 
-Package license: GPL-2
+Package license: GPL-2.0-only
 
 Feedstock license: BSD-3-Clause
 
