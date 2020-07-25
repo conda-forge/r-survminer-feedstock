@@ -33,6 +33,7 @@ requirements:
     - r-magrittr
     - r-maxstat
     - r-purrr
+    - r-rlang
     - r-scales
     - r-survmisc
     - r-survival
@@ -48,6 +49,7 @@ requirements:
     - r-magrittr
     - r-maxstat
     - r-purrr
+    - r-rlang
     - r-scales
     - r-survmisc
     - r-survival
@@ -61,10 +63,11 @@ test:
 
 about:
   home: http://www.sthda.com/english/rpkgs/survminer/
-  license: GPL-2
+  license: GPL-2.0-only
   summary: Contains the function 'ggsurvplot()' for drawing easily beautiful and 'ready-to-publish' survival curves with the 'number at risk' table and 'censoring count plot'. Other functions are also available to plot adjusted curves for `Cox` model and to visually examine 'Cox' model assumptions.
   license_family: GPL2
-  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
+  license_file:
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
 
 extra:
   recipe-maintainers:
