@@ -29,6 +29,7 @@ requirements:
     - r-dplyr
     - r-ggplot2
     - r-ggpubr >=0.1.6
+    - r-ggtext >=0.1.0
     - r-gridextra >=2.0
     - r-magrittr
     - r-maxstat
@@ -45,6 +46,7 @@ requirements:
     - r-dplyr
     - r-ggplot2
     - r-ggpubr >=0.1.6
+    - r-ggtext >=0.1.0
     - r-gridextra >=2.0
     - r-magrittr
     - r-maxstat
