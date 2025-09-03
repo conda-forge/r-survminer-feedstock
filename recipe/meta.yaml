@@ -1,4 +1,4 @@
-{% set version = "0.5.0" %}
+{% set version = "0.5.1" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/survminer_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/survminer/survminer_{{ version }}.tar.gz
-  sha256: d2c7117d1ebce79b1e2b5512f35f53c2aa0702bbb4d5761c145e0d2e4893f58b
+  sha256: 23b27eab098565b7b35118eb0a3fa2641909454834a01f55a064745873435258
 
 build:
   number: 0
